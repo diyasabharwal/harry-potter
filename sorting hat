@@ -1,0 +1,85 @@
+#QUIZ: Which Hogwarts House Are You In?
+
+
+while True:
+    print('Welcome to the Wizarding World of Harry Potter!')
+    n=int(input('Press 1 to put on the Sorting Hat.'))
+    if n==1:
+        print("I am the sorting hat.")#the game begins
+        print("Answer the following questions.")
+        print("I will tell you which House you belong in.")
+        print('Good luck!')
+        answers=[]#we will eventually append all answers into this list
+        p=int(input('Press 1 to see the first question'))
+        if p==1:
+            print('Q1. What is your favorite color?')
+            print('1. Blue')#ravenclaw
+            print('2. Yellow')#hufflepuff
+            print('3. Red')#gryffindor
+            print('4. Green')#slytherin
+            a1=int(input('enter your choice: '))
+            answers.append(a1)#the list now has one element
+            r=int(input('Press 1 to move to the next question'))
+            if r==1:
+                print('Q2. Who is your favorite Harry Potter character?')
+                print('1. Luna Lovegood')#ravenclaw
+                print('2. Newt Scamander')#hufflepuff
+                print('3. Hermione Granger')#gryffindor
+                print('4. Draco Malfoy')#slytherin
+                a2=int(input('enter your choice: '))
+                answers.append(a2)#the list now has two elements
+                s=int(input('Press 1 to move to the next question'))
+                if s==1:
+                    print('Q3. In your opinion, what is the most attractive',end=' ')
+                    print('quality in a person?')
+                    print('1. Curious')#ravenclaw
+                    print('2. Kind')#hufflepuff
+                    print('3. Brave')#gryffindor
+                    print('4. Successful')#slytherin
+                    a3=int(input('enter your choice: '))
+                    answers.append(a3)#the list now has three elements
+                    m=int(input('Press 1 to move to the next question'))
+                    if m==1:
+                        print('Q4.What is your dream job?')
+                        print('1. Become a professor at a prestigious university')#ravenclaw
+                        print('2.Lead a nonprofit and make a change!')#hufflepuff
+                        print('3. Become a travel blogger and explore the world!')#gryffindor
+                        print('4. Become CEO of a Fortune 500 company!')#slytherin
+                        a4=int(input('enter your choice: '))
+                        answers.append(a4)#the list now has four elements
+
+                        if answers.count(1)>2:
+                            print('You are a Ravenclaw!')
+                        if answers.count(2)>2:
+                            print('You are a Hufflepuff!')
+                        if answers.count(3)>2:
+                            print("You belong in Gryffindor!")
+                        if answers.count(4)>2:
+                            print("You belong in Slytherin!")
+                        if answers.count(1)==2:
+                            print('You are a Ravenclaw!')
+                        if answers.count(2)==2:
+                            print('You are a Hufflepuff!')
+                        if answers.count(3)==2:
+                            print("You belong in Gryffindor!")
+                        if answers.count(4)==2:
+                            print("You belong in Slytherin!")
+                        print('Thank you for playing!')
+                        print('Note: If you got more than one output, you may',end=' ')
+                        print('choose amongst the two options.')
+                        print('Best of luck for your time at Hogwarts!')#game ended
+                        break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+                    
+    if n!=1:
+        print("Choice is not valid")
+        print("\n\nPress any key to continue..............")
+        ch = input()
+
+        
+    
+    
+
+
+
+
